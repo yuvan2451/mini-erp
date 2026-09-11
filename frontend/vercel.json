@@ -1,11 +1,31 @@
 {
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "http://16.171.9.131/api/:path*"
+      "source": "/api/:path+",
+      "destination": "http://16.171.9.131/api/:path+"
     },
     {
-      "source": "/(.*)",
+      "source": "/login",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/customers",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/products",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/stock",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/challans",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/",
       "destination": "/index.html"
     }
   ]
