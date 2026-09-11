@@ -1,0 +1,9 @@
+services:
+  backend:
+    image: mini-erp-backend:latest
+    container_name: mini-erp-backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./backend/.env
+    restart: unless-stopped
